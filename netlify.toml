@@ -1,0 +1,12 @@
+[build]
+  base = "/"
+  publish = "public"
+  command = "npm run build"
+
+[dev]
+  command = "npm run start"
+  port = 8888
+  targetPort = 6969
+
+[[plugins]]
+  package = "@netlify/plugin-svelte"

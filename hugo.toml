@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://hugo-svelte-web-components.netlify.app/"
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 

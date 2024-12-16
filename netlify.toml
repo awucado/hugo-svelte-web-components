@@ -8,5 +8,5 @@
   port = 8888
   targetPort = 6969
 
-[[plugins]]
-  package = "@netlify/plugin-svelte"
+[build.environment]
+  HUGO_VERSION = "0.139.4"

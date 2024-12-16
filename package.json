@@ -1,0 +1,25 @@
+{
+	"name": "my-bare-bones-site",
+	"version": "1.0.0",
+	"main": "index.js",
+	"type": "module",
+	"devDependencies": {
+		"@sveltejs/vite-plugin-svelte": "^5.0.2",
+		"fs": "^0.0.1-security",
+		"vite": "^6.0.3"
+	},
+	"scripts": {
+		"dev": "vite",
+		"hugo": "hugo server --forceSyncStatic --port 6969",
+		"start": "concurrently \"vite build --watch\" \"npm run hugo\"",
+		"vbuild": "vite build",
+		"build": "vite build && hugo",
+		"preview": "vite preview",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"algolia": "atomic-algolia",
+		"deploy": "firebase deploy --debug --token \"$FIREBASE_TOKEN\" --only hosting"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": ""
+}

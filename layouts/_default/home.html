@@ -1,0 +1,27 @@
+<!-- layouts/_default/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    <link rel="stylesheet" href="/svelte/{{ .Site.Data.svelte.css }}" />
+    <script type="module" defer src="/svelte/{{ .Site.Data.svelte.js }}" /></script>
+</head>
+<body>
+    <header>
+        <h1>{{ .Site.Title }}</h1>
+    </header>
+
+    <main>
+        <h2>Welcome to my site!</h2>
+        {{ range .Pages }}
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        {{ end }}
+    </main>
+
+    <footer>
+        <p>&copy; {{ .Site.Title }}</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+# Node.js dependencies
+/node_modules/
+
+# Hugo's public folder (build output)
+/public/
+
+# Hugo cache
+/.hugo_cache/
+
+# Vite build output (for Svelte components)
+/dist/
+
+# Svelte / Vite development server output
+/.vite/
+
+# Environment variables
+.env
+
+# MacOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+
+# IDE/editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
